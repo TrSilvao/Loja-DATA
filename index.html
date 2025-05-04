@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style/resete.css">
+    <link rel="stylesheet" href="assets/style/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Vadodara:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <title>Data Representações</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme:{
+                extend: {                  
+                    colors: {
+                        azul: {
+                        logo:'#92b2c6',
+                        bordaLogo:"#04456d"
+                        },
+                    },
+                    fontFamily: {
+                        hindVadodara: ['hind vadodara', 'sans-serif']
+                    },
+                }
+            },
+            plugins: [
+                function ({ addUtilities }) {
+                addUtilities({
+                    '.scrollbar-escondida': {
+                    '-ms-overflow-style': 'none',     // IE e Edge
+                    'scrollbar-width': 'none',        // Firefox
+                    },
+                    '.scrollbar-escondida::-webkit-scrollbar': {
+                    display: 'none',                  // Chrome, Safari e Opera
+                    },
+                });
+                }
+            ]
+
+        }
+    </script>
+</head>
+<body class="bg-azul-logo">
+
+    <header>
+
+        <nav class="nav grid grid-cols-[auto_1fr_auto] sm:grid-cols-[1fr_1fr_1fr_1fr_auto] gap-2 items-center justify-center pt-2 pb-2">
+            
+            <div class="nav__logo pl-2 justify-self-center">
+                <a href="#">
+                    <img class="Menu__logo rounded-full border-2 border-azul-bordaLogo" src="assets/img/data_representacoes_icon_40x40.png" alt="logo data Representações">
+                </a>
+            </div>  
+
+            <div class="nav__pesquisa w-full max-w-md mx-auto 
+            sm:col-span-2">
+                <label class="menu__label" for="pesquisar">
+                    <input class="w-full max-w-md px-4 py-2 border-2 border-azul-bordaLogo rounded-xl bg-white text-center 
+                    placeholder:text-gray-500 placeholder:italic placeholder:text-center 
+                    focus:outline-none focus:ring-2 focus:ring-data-dark focus:border-data-dark 
+                    transition duration-200 shadow-sm"
+                    type="search"
+                    placeholder="O que você procura?" id="pesquisar">
+                </label>
+            </div>
+
+            <div class="nav__icones grid grid-cols-2 items-center">
+
+                <a href="#" class="menu__icone flex justify-center">
+
+                    <img class=" justify-center" src="assets/img/Compras.svg" alt="sacola de compras">
+
+                </a>
+
+                <a href="#" class="menu__icone  flex justify-center">
+
+                    <img src="assets/img/Usuário.svg" alt="Entra na sua conta">
+                    
+                </a>
+    
+            </div>
+
+        </nav>               
+           
+        <div class="swiper">
+            <div class="swiper-wrapper">
+
+            <!-- Slides -->
+
+            <div class="swiper-slide">
+                <img class="justify-self-center w-[432px] h-[216px] sm:w-[650px]" src="assets/img/colchao.png" alt="Produto em destaque do mes, um colchao">
+            </div>
+
+            <div class="swiper-slide">
+                <img class="justify-self-center w-[432px] h-[216px] sm:w-[650px]" src="assets/img/armario.jpg" alt="Produto em destaque do mes, um armario">
+            </div>
+
+            <div class="swiper-slide">
+                <img class="justify-self-center w-[432px] h-[216px] sm:w-[650px]" src="assets/img/guarda roupa.jpg" alt="Produto em destaque do mes, um guarda roupa">
+            </div>      
+
+        </div>
+
+    </header>
+
+    <main>
+
+        <section class="categorias bg-azul-bordaLogo">
+
+            <h1 class="pl-2 pb-2 pt-2 font-hindVadodara font-semibold text-xl sm:justify-self-center text-blue-600 dark:text-sky-400">Categorias</h1>
+
+            <div class="flex gap-2 lg:gap-4 pl-2 overflow-x-scroll overflow-x-alto snap-x md:overflow-x-auto md:justify-self-center">
+
+                <div class="snap-start shrink-0 flex flex-col items-center justify-center">
+                    <img class="rounded-full border-2 border-azul-Logo w-[100px] h-[100px]" src="assets/img/categorias/1-eqsbfuu9v1.webp" alt="categorias armario">
+                    <p class="text-blue-600 dark:text-sky-400 pb-2 pt-2 text-lg font-semibold">Armario</p>
+                </div>
+
+                <div class="snap-start shrink-0 flex flex-col items-center justify-center">
+                <img class="rounded-full border-2 border-azul-Logo w-[100px] h-[100px]" src="assets/img/categorias/cama.webp" alt="categoria cama">
+                <p class="text-blue-600 dark:text-sky-400 pb-2 pt-2 text-lg font-semibold">Cama</p>
+                </div>
+
+                <div class="snap-start shrink-0 flex flex-col items-center justify-center">
+                    <img class="rounded-full border-2 border-azul-Logo w-[100px] h-[100px]" src="assets/img/categorias/mesa.webp" alt="categoria mesa">
+                    <p class="text-blue-600 dark:text-sky-400 pb-2 pt-2 text-lg font-semibold">Mesa</p>
+                </div>   
+
+                <div class="snap-start shrink-0 flex flex-col items-center justify-center">
+                    <img class="rounded-full border-2 border-azul-Logo w-[100px] h-[100px]" src="assets/img/categorias/colchao2.jpg" alt="categorias colchao">
+                    <p class="text-blue-600 dark:text-sky-400 pb-2 pt-2 text-lg font-semibold">Colchao</p>
+                </div>
+
+                <div class="snap-start shrink-0 flex flex-col items-center justify-center">
+                    <img class="rounded-full border-2 border-azul-Logo w-[100px] h-[100px]" src="assets/img/categorias/comoda.png" alt="categoria comoda">
+                    <p class="text-blue-600 dark:text-sky-400 pb-2 pt-2 text-lg font-semibold">Comoda</p>
+                </div>
+
+                <div class="snap-start shrink-0 flex flex-col items-center justify-center">
+                    <img class="rounded-full border-2 border-azul-Logo w-[100px] h-[100px]" src="assets/img/categorias/guarda roupa2.jpg" alt="categoria guarda roupa2">
+                    <p class="text-blue-600 dark:text-sky-400 pb-2 pt-2 text-lg font-semibold">Guarda Roupa</p>
+                </div>    
+
+                <div class="snap-start shrink-0 flex flex-col items-center justify-center">
+                    <img class="rounded-full border-2 border-azul-Logo w-[100px] h-[100px]" src="assets/img/categorias/rack.png" alt="categoria rack">
+                    <p class="text-blue-600 dark:text-sky-400 pb-2 pt-2 text-lg font-semibold">Rack</p>
+                </div>  
+
+                <div class="snap-start shrink-0 flex flex-col items-center justify-center">
+                    <img class="rounded-full border-2 border-azul-Logo w-[100px] h-[100px]" src="assets/img/categorias/sofa.png" alt="categoria sofa">
+                    <p class="text-blue-600 dark:text-sky-400 pb-2 pt-2 text-lg font-semibold">Sofa</p>
+                </div>  
+
+            </div>
+
+        </section>
+
+        <section class="promoçoes lg:pl-8">
+
+            <h2 class="pl-2 pb-2 pt-2 font-hindVadodara font-semibold text-xl lg:text-4xl sm:justify-self-center text-azul-bordaLogo">Promoção</h2>
+
+            <div class="promoçoes__produtos flex gap-2 pl-2 overflow-x-scroll snap-x lg:grid lg:grid-cols-5 lg:grid-rows-2 lg:scrollbar-escondida ">   
+
+                <div class="bg-azul-bordaLogo w-[180px] rounded-xl p- shadow-md text-center snap-start shrink-0 flex flex-col items-center justify-center font-hindVadodara">
+                    <a href="#">
+                    <img class="w-full h-[150px] object-contain mb-2"
+                     src="assets/img/moveis/balcao-armario/CRISTAL_MONACO-removebg-preview.png"
+                     alt="conjunto armario e balcão">
+                    <p class="p-2 font-hindVadodara font-semibold       text-base text-blue-600 dark:text-sky-400">
+                        Conjunto armario cristal e balcão monaco
+                    </p>
+                    <p class="p-2  font-semibold text-base text-blue-600 dark:text-sky-400">R$ XXXX,00</p>
+                    </a>
+                </div>
+
+                <div class="bg-azul-bordaLogo w-[180px] rounded-xl p-2 shadow-md text-center snap-start shrink-0 flex flex-col items-center justify-center font-hindVadodara">
+                    <a href="#">
+                    <img class="w-full h-[150px] object-contain mb-2"
+                     src="assets/img/moveis/balcao-armario/CRISTAL_MONACO-removebg-preview.png"
+                     alt="conjunto armario e balcão">
+                    <p class="p-2 font-hindVadodara font-semibold       text-base text-blue-600 dark:text-sky-400">
+                        Conjunto armario cristal e balcão monaco
+                    </p>
+                    <p class="p-2  font-semibold text-base text-blue-600 dark:text-sky-400">R$ XXXX,00</p>
+                    </a>
+                </div>
+
+                <div class="bg-azul-bordaLogo w-[180px] rounded-xl p-2 shadow-md text-center snap-start shrink-0 flex flex-col items-center justify-center font-hindVadodara">
+                    <a href="#">
+                    <img class="w-full h-[150px] object-contain mb-2"
+                     src="assets/img/moveis/balcao-armario/CRISTAL_MONACO-removebg-preview.png"
+                     alt="conjunto armario e balcão">
+                    <p class="p-2 font-hindVadodara font-semibold       text-base text-blue-600 dark:text-sky-400">
+                        Conjunto armario cristal e balcão monaco
+                    </p>
+                    <p class="p-2  font-semibold text-base text-blue-600 dark:text-sky-400">R$ XXXX,00</p>
+                    </a>
+                </div>
+
+                <div class="bg-azul-bordaLogo w-[180px] rounded-xl p-2 shadow-md text-center snap-start shrink-0 flex flex-col items-center justify-center font-hindVadodara">
+                    <a href="#">
+                    <img class="w-full h-[150px] object-contain mb-2"
+                     src="assets/img/moveis/balcao-armario/CRISTAL_MONACO-removebg-preview.png"
+                     alt="conjunto armario e balcão">
+                    <p class="p-2 font-hindVadodara font-semibold       text-base text-blue-600 dark:text-sky-400">
+                        Conjunto armario cristal e balcão monaco
+                    </p>
+                    <p class="p-2  font-semibold text-base text-blue-600 dark:text-sky-400">R$ XXXX,00</p>
+                    </a>
+                </div>
+
+                <div class="bg-azul-bordaLogo w-[180px] rounded-xl p-2 shadow-md text-center snap-start shrink-0 flex flex-col items-center justify-center font-hindVadodara">
+                    <a href="#">
+                    <img class="w-full h-[150px] object-contain mb-2"
+                     src="assets/img/moveis/balcao-armario/CRISTAL_MONACO-removebg-preview.png"
+                     alt="conjunto armario e balcão">
+                    <p class="p-2 font-hindVadodara font-semibold       text-base text-blue-600 dark:text-sky-400">
+                        Conjunto armario cristal e balcão monaco
+                    </p>
+                    <p class="p-2  font-semibold text-base text-blue-600 dark:text-sky-400">R$ XXXX,00</p>
+                    </a>
+                </div>
+
+                <div class="bg-azul-bordaLogo w-[180px] rounded-xl p-2 shadow-md text-center snap-start shrink-0 flex flex-col items-center justify-center font-hindVadodara">
+                    <a href="#">
+                    <img class="w-full h-[150px] object-contain mb-2"
+                     src="assets/img/moveis/balcao-armario/CRISTAL_MONACO-removebg-preview.png"
+                     alt="conjunto armario e balcão">
+                    <p class="p-2 font-hindVadodara font-semibold       text-base text-blue-600 dark:text-sky-400">
+                        Conjunto armario cristal e balcão monaco
+                    </p>
+                    <p class="p-2  font-semibold text-base text-blue-600 dark:text-sky-400">R$ XXXX,00</p>
+                    </a>
+                </div>
+
+                <div class="bg-azul-bordaLogo w-[180px] rounded-xl p-2 shadow-md text-center snap-start shrink-0 flex flex-col items-center justify-center font-hindVadodara">
+                    <a href="#">
+                    <img class="w-full h-[150px] object-contain mb-2"
+                     src="assets/img/moveis/balcao-armario/CRISTAL_MONACO-removebg-preview.png"
+                     alt="conjunto armario e balcão">
+                    <p class="p-2 font-hindVadodara font-semibold       text-base text-blue-600 dark:text-sky-400">
+                        Conjunto armario cristal e balcão monaco
+                    </p>
+                    <p class="p-2  font-semibold text-base text-blue-600 dark:text-sky-400">R$ XXXX,00</p>
+                    </a>
+                </div>
+
+                <div class="bg-azul-bordaLogo w-[180px] rounded-xl p-2 shadow-md text-center snap-start shrink-0 flex flex-col items-center justify-center font-hindVadodara">
+                    <a href="#">
+                    <img class="w-full h-[150px] object-contain mb-2"
+                     src="assets/img/moveis/balcao-armario/CRISTAL_MONACO-removebg-preview.png"
+                     alt="conjunto armario e balcão">
+                    <p class="p-2 font-hindVadodara font-semibold       text-base text-blue-600 dark:text-sky-400">
+                        Conjunto armario cristal e balcão monaco
+                    </p>
+                    <p class="p-2  font-semibold text-base text-blue-600 dark:text-sky-400">R$ XXXX,00</p>
+                    </a>
+                </div>
+
+                <div class="bg-azul-bordaLogo w-[180px] rounded-xl p-2 shadow-md text-center snap-start shrink-0 flex flex-col items-center justify-center font-hindVadodara">
+                    <a href="#">
+                    <img class="w-full h-[150px] object-contain mb-2"
+                     src="assets/img/moveis/balcao-armario/CRISTAL_MONACO-removebg-preview.png"
+                     alt="conjunto armario e balcão">
+                    <p class="p-2 font-hindVadodara font-semibold       text-base text-blue-600 dark:text-sky-400">
+                        Conjunto armario cristal e balcão monaco
+                    </p>
+                    <p class="p-2  font-semibold text-base text-blue-600 dark:text-sky-400">R$ XXXX,00</p>
+                    </a>
+                </div>
+
+                <div class="bg-azul-bordaLogo w-[180px] rounded-xl p-2 shadow-md text-center snap-start shrink-0 flex flex-col items-center justify-center font-hindVadodara">
+                    <a href="#">
+                    <img class="w-full h-[150px] object-contain mb-2"
+                     src="assets/img/moveis/balcao-armario/CRISTAL_MONACO-removebg-preview.png"
+                     alt="conjunto armario e balcão">
+                    <p class="p-2 font-hindVadodara font-semibold       text-base text-blue-600 dark:text-sky-400">
+                        Conjunto armario cristal e balcão monaco
+                    </p>
+                    <p class="p-2  font-semibold text-base text-blue-600 dark:text-sky-400">R$ XXXX,00</p>
+                    </a>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="pt-4 w-full lg:grid lg:grid-cols-2">
+
+        <div class="mt-6 px-4 py-4 bg-white rounded-xl shadow-md max-w-xl mx-auto lg:w-[420.66px]">
+            <h3 class="text-lg font-semibold text-blue-700 mb-4 text-center">Fale conosco</h3>
+            <form class="flex flex-col gap-4">
+              
+                <!-- Campo Nome -->
+                <input type="text" 
+                     placeholder="Seu nome" 
+                     class="p-2 border border-azul-bordaLogo rounded-md focus:outline-none focus:ring-2 focus:ring-azul-bordaLogo">
+          
+                 <!-- Campo Email -->
+                <input type="email" 
+                     placeholder="Seu e-mail" 
+                     class="p-2 border border-azul-bordaLogo rounded-md focus:outline-none focus:ring-2 focus:ring-azul-bordaLogo">
+              
+                <!-- Botão Enviar -->
+                <button type="submit"
+                      class="bg-azul-bordaLogo text-white py-2 px-4 rounded-md hover:bg-blue-900 transition">
+                    Enviar
+                </button>
+
+                <div class="max-w-4xl mx-auto px-4 lg:hidden">
+                    <h3 class="text-lg font-semibold text-blue-700 mb-4 text-center">
+                        Ou nos mande uma mensagem
+                    </h3>
+                    <div class="grid grid-cols-5 grid-rows-2 items-center gap-2">
+                        <p class="text-lg font-semibold text-blue-700 col-span-2">
+                            WhatsApp:
+                        </p>
+                        <p class="col-span-3 col-start-3">
+                            +55 33 8827-6609
+                        </p>
+                        <p class="text-base font-semibold text-blue-700 col-span-1">
+                            Email:
+                        </p>
+                        <p class="col-span-3 text-sm">
+                            datarepresentacoes@hotmail.com
+                        </p>
+                    </div>
+                </div>
+            </form>
+        </div>      
+        
+        <div class="mt-6 px-4 py-4 bg-white rounded-xl shadow-md max-w-xl mx-auto hidden lg:block">
+            <h3 class="text-lg font-semibold text-blue-700 mb-4 text-center">Fale conosco</h3>
+            <form class="flex flex-col gap-4">
+              
+                <div class="max-w-4xl mx-auto px-4 lg:block">
+                    <h3 class="text-lg font-semibold text-blue-700 mb-4 text-center">
+                        Ou nos mande uma mensagem
+                    </h3>
+                    <div class="grid grid-cols-5 grid-rows-2 items-center gap-2">
+                        <p class="text-lg font-semibold text-blue-700 col-span-2">
+                            WhatsApp:
+                        </p>
+                        <p class="col-span-3 col-start-3">
+                            +55 33 8827-6609
+                        </p>
+                        <p class="text-base font-semibold text-blue-700 col-span-1">
+                            Email:
+                        </p>
+                        <p class="col-span-3 text-sm">
+                            datarepresentacoes@hotmail.com
+                        </p>
+                    </div>
+                </div>
+            </form>
+        </div>     
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js">        
+    </script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            spaceBetween: 100,
+            slidesPerView: 1,
+            navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+</body>
+</html>
+
